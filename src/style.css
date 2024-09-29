@@ -31,3 +31,15 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
+
+#generateExcuse {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

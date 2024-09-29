@@ -35,33 +35,27 @@ let when = [
 ];
 
 function getRandomNumber(a, b) {
-  return Math.floor(Math.random() * (b - a + 1) + a); // Incluye el último número
+  return Math.floor(Math.random() * (b - a + 1) + a);
 }
 
 function getRandom(anyArray) {
   let max = anyArray.length - 1;
   let min = 0;
-  let random = getRandomNumber(min, max); // Asegúrate de que incluya el último elemento
+  let random = getRandomNumber(min, max);
   return anyArray[random];
 }
 
 window.onload = function() {
   console.log("Hello Rigo from the console!");
 
-  // Generar una excusa inicial al cargar la página
-  document.querySelector("#excuse").innerHTML =
-    getRandom(who) +
-    " " +
-    getRandom(action) +
-    " " +
-    getRandom(what) +
-    " " +
-    getRandom(when);
-
-  // Añadir un evento al botón para generar una nueva excusa al hacer clic
   document
     .querySelector("#generateExcuse")
     .addEventListener("click", function() {
+      const audio = document.getElementById("symphonyAudio");
+      audio.currentTime = 0;
+      audio.play().catch(error => {
+        console.log("Audio no se pudo reproducir. Error: ", error);
+      });
       document.querySelector("#excuse").innerHTML =
         getRandom(who) +
         " " +
