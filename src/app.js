@@ -44,9 +44,11 @@ function getRandom(anyArray) {
   let random = getRandomNumber(min, max); // Asegúrate de que incluya el último elemento
   return anyArray[random];
 }
+
 window.onload = function() {
   console.log("Hello Rigo from the console!");
 
+  // Generar una excusa inicial al cargar la página
   document.querySelector("#excuse").innerHTML =
     getRandom(who) +
     " " +
@@ -55,4 +57,18 @@ window.onload = function() {
     getRandom(what) +
     " " +
     getRandom(when);
+
+  // Añadir un evento al botón para generar una nueva excusa al hacer clic
+  document
+    .querySelector("#generateExcuse")
+    .addEventListener("click", function() {
+      document.querySelector("#excuse").innerHTML =
+        getRandom(who) +
+        " " +
+        getRandom(action) +
+        " " +
+        getRandom(what) +
+        " " +
+        getRandom(when);
+    });
 };
