@@ -1,13 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background: white;
+  background-image: url(https://i.imgur.com/VBfiFV4.jpeg);
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -18,10 +19,15 @@ body {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: black;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 #excuse {
   font-size: 50px;
-  color: black;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
