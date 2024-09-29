@@ -1,1 +1,27 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  text-align: center;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#excuse {
+  font-size: 50px;
+  color: black;
+}
